@@ -23,8 +23,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/views" />
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: simple_calendar">
     <configuration name="Development: simple_calendar" type="RailsRunConfigurationType" factoryName="Rails">
@@ -139,6 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659502253224</updated>
       <workItem from="1659502256737" duration="7171000" />
+      <workItem from="1659525489486" duration="1669000" />
     </task>
     <servers />
   </component>
