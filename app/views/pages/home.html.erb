@@ -1,0 +1,71 @@
+
+<div class="container mt-5 text-center">
+  <h1>Kishore - Calendar</h1>
+  <p class="p-2">Find me in the free time !!</p>
+  <div class="bg-blue-500 rounded-xl px-4 py-3">
+    <%= link_to "Add New Event", new_event_path, data: { turbo_frame: 'modal' } %>
+  </div>
+  <h3>Monthly - Calendar</h3>
+
+  <%= month_calendar(events: @events) do |date, events| %>
+    <div class="day">
+      <%= date %>
+    </div>
+    <% events.each do |event| %>
+      <div class="card-header">
+        <div class="card-title">
+          <%= link_to event.title, event %>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <strong>Meeting with:</strong> <%= event.persons %>
+        </p>
+        <p>
+          <%= event.description %>
+        </p>
+      </div>
+      <div class="card-footer">
+        <p class="card-text">
+          <strong>From:</strong> <%= event.start_time.strftime('%A, %B %d, %Y at %I:%M %P') %>
+        </p>
+        <p class="card-text">
+          <strong>To:</strong> <%= event.end_time.strftime('%A, %B %d, %Y at %I:%M %P') %>
+        </p>
+
+      </div>
+    <% end %>
+  <% end %>
+  <h3 class="mt-5">Weekly - Calendar</h3>
+  <%= week_calendar(events: @events) do |date, events| %>
+    <div class="day">
+      <%= date %>
+    </div>
+    <% events.each do |event| %>
+      <div class="card-header">
+        <div class="card-title">
+          <%= link_to event.title, event %>
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <strong>Meeting with:</strong> <%= event.persons %>
+        </p>
+        <p>
+          <%= event.description %>
+        </p>
+      </div>
+      <div class="card-footer">
+        <p class="card-text">
+          <strong>From:</strong> <%= event.start_time.strftime('%A, %B %d, %Y at %I:%M %P') %>
+        </p>
+        <p class="card-text">
+          <strong>To:</strong> <%= event.end_time.strftime('%A, %B %d, %Y at %I:%M %P') %>
+        </p>
+
+      </div>
+    <% end %>
+    <% end %>
+
+</div>
+

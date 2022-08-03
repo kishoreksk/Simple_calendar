@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>New event</h1>
+  <%= turbo_frame_tag "modal" do %>
+    <%= render "form", event: @event %>
+  <% end %>
+  <br>
+
+  <div>
+    <%= link_to "Back to events", events_path %>
+  </div>
+
+</div>
+
